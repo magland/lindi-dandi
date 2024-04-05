@@ -2,6 +2,8 @@
 
 Provides the needed functionality for uploading LINDI .nwb.json files to DANDI.
 
+See: https://github.com/NeurodataWithoutBorders/lindi/pull/42
+
 NOTE: Everything is hard-coded to work with the DANDI staging instance.
 
 NOTE: Any destructive operations (e.g., deleting a dandiset) will prompt you to confirm.
