@@ -160,6 +160,7 @@ def _upload_blob(*, dandiset_id: str, dandiset_version: str, local_filename: str
     assert parts is not None, "Unexpected error: parts is None"
     processed_parts = []
     for part in parts:
+        print(f'Uploading part {part["part_number"]} / {len(parts)} for {local_filename}')
         part_number = part["part_number"]
         etag_part = etagger.get_part(part["part_number"])
         part_size = part["size"]
